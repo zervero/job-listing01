@@ -20,7 +20,7 @@
 .navbar-default {
     background-color: #3d3d3d;//背景颜色
     border-color: #3d3d3d;//边框色
-    margin-bottom: 15;//底部 margin 不撑开距离
+    margin-bottom: 0;//底部 margin 不撑开距离
 }
 @media (min-width: 768px) {
     .navbar {
@@ -63,6 +63,31 @@
     background-color: transparent;
     color: #FFFFFF;
 }
-.dropdown-menu > li > li {
-  color: #00ce96;
+.jumbotron {
+  background-image:url('http://y.photo.qq.com/img?s=n0m7YMg0L&l=y.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 110px;
+  border-radius: 0;//圆角为0
+}
+
+.title {
+  font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 80px;
+}
+
+.slogan {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+  top: 12px;
+}
+
+.lead {
+  margin-bottom: 60px;
+  text-align: center;
+  color: white;
 }
