@@ -63,11 +63,14 @@
     background-color: transparent;
     color: #FFFFFF;
 }
-.jumbotron {
-  background-image:url('https://images.unsplash.com/photo-1469577731735-89f9e072f5e5');
+
+.container-fluid .jumbotron{
+  background-image:url('https://images.unsplash.com/photo-1469521669194-babb45599def');
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
+  padding-bottom: 110px;//内部的底部边距，这样按钮不会很靠近底部了
+  margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
   border-radius: 0;//圆角为0
 }
 
@@ -76,7 +79,7 @@
   text-align: center;
   margin-top: 200px;
   margin-bottom: 80px;
-  color: white;
+  //background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
 }
 
 .slogan {
@@ -85,12 +88,14 @@
   text-align: center;
   color: white;
   top: 12px;
+  //background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
 }
 
 .lead {
   margin-bottom: 60px;
   text-align: center;
   color: white;
+  //background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
 }
 .custab{
   border: 1px solid #00ce96;
@@ -103,4 +108,15 @@
 .custab:hover{
   box-shadow: 3px 3px 0px transparent;
   transition: 0.5s;
+}
+
+.btn-danger {
+    color: #fff;//字体颜色
+    background-color: #EF6C00;//背景颜色
+    border-color: #EF6C00;//边框颜色
+}
+
+.btn-danger:hover {
+    background-color: #E65100;//鼠标放置在btn上的背景颜色
+    border-color: #E65100;//鼠标放置在btn上的边框颜色
 }
