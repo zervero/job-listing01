@@ -64,10 +64,10 @@
     color: #FFFFFF;
 }
 .jumbotron {
-  background-image:url('http://y.photo.qq.com/img?s=n0m7YMg0L&l=y.jpg');
+  background-image:url('https://images.unsplash.com/photo-1469577731735-89f9e072f5e5');
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 110px;
+  padding-bottom: 50px;
   border-radius: 0;//圆角为0
 }
 
@@ -76,6 +76,7 @@
   text-align: center;
   margin-top: 200px;
   margin-bottom: 80px;
+  color: white;
 }
 
 .slogan {
@@ -90,4 +91,16 @@
   margin-bottom: 60px;
   text-align: center;
   color: white;
+}
+.custab{
+  border: 1px solid #00ce96;
+  padding: 5px;
+  margin: 5% 0;
+  box-shadow: 3px 3px 2px #00ce96;
+  transition: 0.5s;
+}
+
+.custab:hover{
+  box-shadow: 3px 3px 0px transparent;
+  transition: 0.5s;
 }
