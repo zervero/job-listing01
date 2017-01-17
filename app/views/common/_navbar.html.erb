@@ -2,7 +2,9 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <a class="navbar-brand" href="/"><i class="fa fa-diamond" aria-hidden="true"></i> 1024 Offer
+            <a class="navbar-brand" href="/">
+                <i class="fa fa-diamond" aria-hidden="true"></i>
+                1024 Offer
             </a>
         </div>
 
@@ -22,22 +24,21 @@
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
+                        <% if current_user.admin? %>
                         <li>
-                        <li>
-                            <%= link_to("管理员中心", admin_jobs_path) %>
-                        </li>
-
+                            <%= link_to("管理员中心", admin_jobs_path) %></li>
+                        <li class="divider"></li>
+                        <% end %>
                         <li>
                             <%= link_to("登出", destroy_user_session_path, method: :delete) %>
                         </li>
-                    </li>
-                </ul>
+                    </ul>
+                </li>
+                <% end %>
             </li>
-            <% end %>
-        </li>
-    </ul>
-</div>
-<!-- /.navbar-collapse -->
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
 </div>
 <!-- /.container-fluid -->
 </nav>
