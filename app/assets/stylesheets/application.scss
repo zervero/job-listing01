@@ -32,7 +32,7 @@
    color: #00ce96;//字体颜色
    padding: 10px 15px;//上下10px,左右15px
    line-height: 30px;//文字行高
-   font-size: 30px;
+   font-size: 26px;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -120,5 +120,8 @@
     border-color: #E65100;//鼠标放置在btn上的边框颜色
 }
 .loginAndsignUp {
+  margin: 100px 25%;
+}
+.about{
   margin: 100px 25%;
 }

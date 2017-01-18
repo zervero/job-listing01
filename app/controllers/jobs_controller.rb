@@ -20,6 +20,10 @@ class JobsController < ApplicationController
     end
   end
 
+  def about
+
+  end
+
   def new
     @job = Job.new
   end
